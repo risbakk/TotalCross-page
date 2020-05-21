@@ -2,7 +2,7 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-// import ContactForm from "../components/contact-form";
+import ContactForm from "../components/contact-form";
 import { useStaticQuery, graphql } from "gatsby";
 import BackgroundImage from "gatsby-background-image";
 
@@ -22,7 +22,7 @@ function Contact() {
     <Layout>
       <SEO title="contact us" />
       <BackgroundImage Tag="section" fluid={data.file.childImageSharp.fluid}>
-        <h1>totalcross@totalcross.com</h1>
+        <ContactForm />
       </BackgroundImage>
     </Layout>
   );
