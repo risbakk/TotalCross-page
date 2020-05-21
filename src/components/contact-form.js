@@ -46,6 +46,12 @@ class ContactForm extends Component {
       this.state.message,
       this.state.country
     );
+    this.setState(() => ({
+      name: "",
+      email: "",
+      message: "",
+      country: "",
+    }));
   };
   render() {
     return (
