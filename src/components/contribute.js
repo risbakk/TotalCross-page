@@ -15,7 +15,7 @@ const file = <FontAwesomeIcon className={styles.icon} icon={faFileAlt} />;
 const Contribute = () => {
   return (
     <div className={styles.container}>
-      <h2 className={styles.title}>Contribute</h2>
+      <h2 className={styles.title}>Become a TotalCross Contributor</h2>
       <div className={styles.cardsContainer}>
         <div className={styles.card}>
           <div className={styles.cardIcon}>{code}</div>
@@ -43,7 +43,7 @@ const Contribute = () => {
 
         <div className={styles.card}>
           <div className={styles.cardIcon}>{file}</div>
-          <div className={styles.cardTitle}>Doc</div>
+          <div className={styles.cardTitle}>Docs</div>
           <a
             target="_blank"
             rel="noopener noreferrer"

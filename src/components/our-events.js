@@ -13,7 +13,7 @@ const OurEvents = () => {
       <div className={styles.cardsContainer}>
         <div className={styles.card}>
           <div className={styles.cardIcon}>{horn}</div>
-          <div className={styles.cardTitle}>Our Events</div>
+          <div className={styles.cardTitle}>TotalCross Events</div>
           <a
             target="_blank"
             rel="noopener noreferrer"

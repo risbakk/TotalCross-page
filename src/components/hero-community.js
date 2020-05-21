@@ -24,7 +24,7 @@ function HeroCommunity() {
         className={styles.container}
         fluid={data.file.childImageSharp.fluid}
       >
-        <h1 className={styles.title}>Welcome to the TotalCross Community</h1>
+        <h1 className={styles.title}>Join the TotalCross Community</h1>
       </BackgroundImage>
       <CrossyOnABranch />
     </div>

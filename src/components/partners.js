@@ -30,11 +30,30 @@ function Partners() {
           }
         }
       }
+      bnb: file(relativePath: { eq: "src/imgs/Logo_BNB_branca.png" }) {
+        childImageSharp {
+          fixed(width: 192, height: 70) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      scandit: file(relativePath: { eq: "src/imgs/scandit.png" }) {
+        childImageSharp {
+          fixed(width: 200, height: 30) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
     }
   `);
   return (
     <div className={styles.container}>
-      <div className={styles.logo}>Partner1</div>
+      <div className={styles.logo}>
+        <Img
+          fixed={data.bnb.childImageSharp.fixed}
+          alt="Banco do Nordeste logo"
+        />
+      </div>
       <div className={styles.logo}>
         <Img fixed={data.toradex.childImageSharp.fixed} alt="Toradex logo" />
       </div>
@@ -44,7 +63,9 @@ function Partners() {
           alt="Aveiro University logo"
         />
       </div>
-      <div className={styles.logo}>Partner4</div>
+      <div className={styles.logo}>
+        <Img fixed={data.scandit.childImageSharp.fixed} alt="Scandit logo" />
+      </div>
       <div className={styles.logo}>
         <Img fixed={data.unifor.childImageSharp.fixed} alt="Unifor logo" />
       </div>
