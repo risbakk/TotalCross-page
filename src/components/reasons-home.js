@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 
 import styles from "./reasons-home.module.scss";
+import HelloWorldGIF from "../imgs/TotalCrossHelloWorld.gif";
 
 function Reasons() {
   const data = useStaticQuery(graphql`
@@ -91,9 +92,14 @@ function Reasons() {
         </div>
       </div>
       <div className={styles.containerCodeImage}>
-        <Img
+        {/* <Img
           className={styles.image}
           fixed={data.code.childImageSharp.fixed}
+          alt="TotalCross code sample"
+        /> */}
+        <img
+          className={styles.image}
+          src={HelloWorldGIF}
           alt="TotalCross code sample"
         />
 

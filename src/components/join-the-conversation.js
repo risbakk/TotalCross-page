@@ -29,7 +29,7 @@ const JoinTheConversation = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://github.com/TotalCross/totalcross"
+            href="https://forum.totalcross.com/"
           >
             <div className={styles.cardArrow}>{arrow}</div>
           </a>

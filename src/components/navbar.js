@@ -31,19 +31,15 @@ function NavBar() {
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav
-          className="m-auto"
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
+        <Nav className={styles.navContainer}>
+          <Link className={styles.navItem} to="/pricing">
+            pricing
+          </Link>
           <Link className={styles.navItem} to="/docs">
             docs
           </Link>
           <Link className={styles.navItem} to="/community">
-            COMMUNITY
+            community
           </Link>
           <a
             className={styles.navItem}

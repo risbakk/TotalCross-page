@@ -95,13 +95,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div style={{ fontSize: "small" }}>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org" target="_blank" rel="noreferrer">
-          Gatsby
-        </a>
-      </div>
     </footer>
   );
 };

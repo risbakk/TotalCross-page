@@ -28,7 +28,11 @@ module.exports = {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
-          families: ["Pacifico", "Poppins:300,500,700,800"],
+          families: [
+            "Pacifico",
+            "Poppins:300,500,700,800",
+            "Noto Sans JP:100,200,300,400,500",
+          ],
         },
       },
     },
