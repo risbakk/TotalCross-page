@@ -15,13 +15,7 @@ function CrossyOpenWings() {
     }
   `);
   return (
-    <div
-      style={{
-        marginBottom: "-145px",
-        paddingLeft: "250px",
-        zIndex: "-1",
-      }}
-    >
+    <div>
       <Img
         fixed={data.crossy.childImageSharp.fixed}
         alt="TotalCross mascot with open wings"

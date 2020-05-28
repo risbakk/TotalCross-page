@@ -65,7 +65,9 @@ class ContactForm extends Component {
           // action="https://getform.io/f/fe92951a-4b98-4328-bd32-566820ce3504"
           //method="POST"
         >
-          <CrossyOpenWings />
+          <div className={styles.crossy}>
+            <CrossyOpenWings />
+          </div>
           <input
             className={styles.formInput}
             type="text"
