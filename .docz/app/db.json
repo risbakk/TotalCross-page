@@ -643,13 +643,13 @@
       ]
     },
     {
-      "key": "src/components/navbar.js",
+      "key": "src/utils/social-networks.js",
       "value": [
         {
           "description": "",
-          "displayName": "NavBar",
+          "displayName": "SocialNetworks",
           "methods": [],
-          "actualName": "NavBar"
+          "actualName": "SocialNetworks"
         }
       ]
     }

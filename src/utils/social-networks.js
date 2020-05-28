@@ -15,35 +15,44 @@ const snYou = <FontAwesomeIcon className={styles.icon} icon={faYoutube} />;
 // const snLin = <FontAwesomeIcon icon={faLinkedin} />;
 
 const SocialNetworks = () => (
-  <div>
-    <a
-      target="_blank"
-      rel="noopener noreferrer"
-      href="https://github.com/TotalCross/totalcross"
-    >
-      {snGit}
-    </a>
-    <a
-      target="_blank"
-      rel="noopener noreferrer"
-      href="https://twitter.com/TotalCross"
-    >
-      {snTwt}
-    </a>
-    <a
-      target="_blank"
-      rel="noopener noreferrer"
-      href="https://t.me/totalcrosscommunity"
-    >
-      {snTel}
-    </a>
-    <a
-      target="_blank"
-      rel="noopener noreferrer"
-      href="https://bit.ly/youtube-totalcross"
-    >
-      {snYou}
-    </a>
+  <div className={styles.container}>
+    <div className={styles.iconContainer}>
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://github.com/TotalCross/totalcross"
+      >
+        {snGit}
+      </a>
+    </div>
+    <div className={styles.iconContainer}>
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://twitter.com/TotalCross"
+      >
+        {snTwt}
+      </a>
+    </div>
+    <div className={styles.iconContainer}>
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://t.me/totalcrosscommunity"
+      >
+        {snTel}
+      </a>
+    </div>
+    <div className={styles.iconContainer}>
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://bit.ly/youtube-totalcross"
+      >
+        {snYou}
+      </a>
+    </div>
+
     {/* <a
       target="_blank"
       rel="noopener noreferrer"

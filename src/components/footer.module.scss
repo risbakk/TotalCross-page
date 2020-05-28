@@ -11,6 +11,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  // border: solid yellow;
 }
 .footer-nav {
   display: flex;
@@ -39,4 +40,23 @@
 .footer-nav-item:hover {
   text-decoration: none;
   color: $text-accent;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    text-align: center;
+    // border: solid green;
+  }
+  .footer-nav-group {
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 0px;
+  }
 }
