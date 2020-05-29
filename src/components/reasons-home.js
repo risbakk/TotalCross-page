@@ -66,7 +66,7 @@ function Reasons() {
         >
           <Img
             fixed={data.devices.childImageSharp.fixed}
-            alt="desktop tablet and mobile phone icon"
+            alt="desktop tablet and mobile icon"
           />
           <h6 className={styles.iconTitle}>Cross-Platform</h6>
           <p className={styles.iconText}>
