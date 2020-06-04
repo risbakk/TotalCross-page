@@ -1,7 +1,7 @@
 {
-  "name": "docz-example-gatsby",
+  "name": "TotalCross",
   "private": true,
-  "description": "Example of how to integrate docz with gatsby as a theme",
+  "description": "Open Source cross-platform SDK that builds beautiful GUIs for embedded software.",
   "version": "2.0.0-rc.41",
   "keywords": [
     "gatsby",

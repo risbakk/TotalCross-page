@@ -1,7 +1,7 @@
 {
   "config": {
     "title": "TotalCross",
-    "description": "Example of how to integrate docz with gatsby as a theme",
+    "description": "Open Source cross-platform SDK that builds beautiful GUIs for embedded software.",
     "menu": [
       "Getting Started",
       "Components"
@@ -639,17 +639,6 @@
           "displayName": "Logo",
           "methods": [],
           "actualName": "Logo"
-        }
-      ]
-    },
-    {
-      "key": "src/components/reasons-home.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Reasons",
-          "methods": [],
-          "actualName": "Reasons"
         }
       ]
     }
