@@ -9,11 +9,11 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pedronauck/docz/issues"
+    "url": "https://github.com/risbakk/TotalCross-page/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pedronauck/docz.git"
+    "url": "https://github.com/risbakk/TotalCross-page.git"
   },
   "scripts": {
     "dev": "gatsby develop",
