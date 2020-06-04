@@ -1,5 +1,6 @@
 $font-family-main: "Poppins", sans-serif;
 $font-family-sec: "Poppins", sans-serif;
+$font-family-sec-mobile: "Noto Sans JP", sans-serif;
 $font-h1: 800 46px/60px $font-family-main;
 $font-h2: 700 30px/40px $font-family-main;
 $font-h3: 500 17px/28px $font-family-main;
@@ -24,6 +25,9 @@ $grey-mobile: #6b5757;
 $white-mobile: #f2f2f2;
 $red-mobile: #c62f2e;
 $green-mobile: #63a980;
+
+$font-h2-mobile: 500 30px/40px $font-family-sec-mobile;
+$font-h3-mobile: 300 17px/28px $font-family-sec-mobile;
 
 $main-pt-desktop: 200px;
 $main-pt-mobile: 100px;
