@@ -3,9 +3,9 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 
 import HeroCommunity from "../components/hero-community";
-import OurEvents from "../components/our-events";
-import Contribute from "../components/contribute";
-import JoinTheConversation from "../components/join-the-conversation";
+import OurEvents from "../components/community-our-events";
+import Contribute from "../components/community-contribute";
+import JoinTheConversation from "../components/community-join-the-conversation";
 
 function Community() {
   return (
