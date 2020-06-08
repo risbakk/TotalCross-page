@@ -100,7 +100,7 @@ function Cases() {
             <div className={styles.buttonAreaText}>
               Install TotalCross VSCode <br /> plugin for a quick start
             </div>
-            <div>
+            <div className={styles.buttonAreaButton}>
               <button className={styles.button}>Try in 8 minutes</button>
             </div>
           </div>

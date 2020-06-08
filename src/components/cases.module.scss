@@ -60,6 +60,7 @@
   justify-content: center;
   padding-right: 10px;
   padding-left: 10px;
+  // border: solid blue;
 }
 
 .call-to-action-card {
@@ -77,12 +78,16 @@
   flex-direction: row;
   padding-bottom: 50px;
   align-items: center;
+  justify-content: center;
+  // border: solid pink;
 }
 
 .button-area-text {
   font: $font-h2;
-  padding: 0 0 10px 64px;
-  text-align: left;
+  padding: auto;
+  text-align: center;
+  width: 98%;
+  // border: solid blue;
 }
 
 .button {
@@ -91,12 +96,28 @@
   background-color: $bcg-main;
   border-radius: 20px;
   width: 200px;
-  margin: auto 64px;
+  margin: 10px auto;
+}
+.button-area-button {
+  width: 100%;
+  // border: solid green;
+  padding-top: 40px;
 }
 
 .cases-icon {
-  padding: 40px 0 0 64px;
-  text-align: left;
+  padding-top: 40px;
+  text-align: center;
   color: $bcg-main;
   font-size: 30px;
+  // border: solid blue;
+}
+
+@media only screen and (max-width: 600px) {
+  .call-to-action-card {
+    width: 90%;
+  }
+  .button {
+    font: $font-h3;
+    margin: 0;
+  }
 }
