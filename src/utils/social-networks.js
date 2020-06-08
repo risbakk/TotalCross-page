@@ -1,10 +1,12 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faTwitter } from "@fortawesome/free-brands-svg-icons";
-import { faTelegram } from "@fortawesome/free-brands-svg-icons";
-import { faYoutube } from "@fortawesome/free-brands-svg-icons";
-// import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faTwitter,
+  faTelegram,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
+import { GITHUB, TWITTER, TELEGRAM, YOUTUBE } from "./links";
 
 import styles from "./social-networks.module.scss";
 
@@ -12,54 +14,29 @@ const snGit = <FontAwesomeIcon className={styles.icon} icon={faGithub} />;
 const snTwt = <FontAwesomeIcon className={styles.icon} icon={faTwitter} />;
 const snTel = <FontAwesomeIcon className={styles.icon} icon={faTelegram} />;
 const snYou = <FontAwesomeIcon className={styles.icon} icon={faYoutube} />;
-// const snLin = <FontAwesomeIcon icon={faLinkedin} />;
 
 const SocialNetworks = () => (
   <div className={styles.container}>
     <div className={styles.iconContainer}>
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://github.com/TotalCross/totalcross"
-      >
+      <a target="_blank" rel="noopener noreferrer" href={GITHUB}>
         {snGit}
       </a>
     </div>
     <div className={styles.iconContainer}>
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://twitter.com/TotalCross"
-      >
+      <a target="_blank" rel="noopener noreferrer" href={TWITTER}>
         {snTwt}
       </a>
     </div>
     <div className={styles.iconContainer}>
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://t.me/totalcrosscommunity"
-      >
+      <a target="_blank" rel="noopener noreferrer" href={TELEGRAM}>
         {snTel}
       </a>
     </div>
     <div className={styles.iconContainer}>
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://bit.ly/youtube-totalcross"
-      >
+      <a target="_blank" rel="noopener noreferrer" href={YOUTUBE}>
         {snYou}
       </a>
     </div>
-
-    {/* <a
-      target="_blank"
-      rel="noopener noreferrer"
-      href="https://linkedin.com/company/totalcross"
-    >
-      {snLin}
-    </a> */}
   </div>
 );
 

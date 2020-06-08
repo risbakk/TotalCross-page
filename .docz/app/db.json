@@ -641,39 +641,6 @@
           "actualName": "Logo"
         }
       ]
-    },
-    {
-      "key": "src/components/community-join-the-conversation.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "JoinTheConversation",
-          "methods": [],
-          "actualName": "JoinTheConversation"
-        }
-      ]
-    },
-    {
-      "key": "src/components/community-contribute.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Contribute",
-          "methods": [],
-          "actualName": "Contribute"
-        }
-      ]
-    },
-    {
-      "key": "src/components/community-our-events.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "OurEvents",
-          "methods": [],
-          "actualName": "OurEvents"
-        }
-      ]
     }
   ]
 }
