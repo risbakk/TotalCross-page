@@ -1,99 +1,83 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTwitter } from "@fortawesome/free-brands-svg-icons";
-import { faTelegram } from "@fortawesome/free-brands-svg-icons";
-import { faYoutube } from "@fortawesome/free-brands-svg-icons";
-import { faMedium } from "@fortawesome/free-brands-svg-icons";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faTwitter,
+  faLinkedin,
+  faTelegram,
+  faYoutube,
+  faMedium,
+} from "@fortawesome/free-brands-svg-icons";
 import { faComments } from "@fortawesome/free-solid-svg-icons";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import {
+  FORUM,
+  TWITTER,
+  TELEGRAM,
+  YOUTUBE,
+  MEDIUM,
+  LINKEDIN,
+} from "../utils/links";
+import Card from "./card";
 
 import styles from "./cards.module.scss";
 
-const snTwt = <FontAwesomeIcon className={styles.icon} icon={faTwitter} />;
-const snTel = <FontAwesomeIcon className={styles.icon} icon={faTelegram} />;
-const snYou = <FontAwesomeIcon className={styles.icon} icon={faYoutube} />;
-const snLin = <FontAwesomeIcon className={styles.icon} icon={faLinkedin} />;
-const snMed = <FontAwesomeIcon className={styles.icon} icon={faMedium} />;
-const comments = <FontAwesomeIcon className={styles.icon} icon={faComments} />;
-const arrow = <FontAwesomeIcon className={styles.icon} icon={faArrowRight} />;
-
 const JoinTheConversation = () => {
+  const ICON_TWITTER = (
+    <FontAwesomeIcon className={styles.icon} icon={faTwitter} />
+  );
+  const ICON_TELEGRAM = (
+    <FontAwesomeIcon className={styles.icon} icon={faTelegram} />
+  );
+  const ICON_YOUTUBE = (
+    <FontAwesomeIcon className={styles.icon} icon={faYoutube} />
+  );
+  const ICON_LINKEDIN = (
+    <FontAwesomeIcon className={styles.icon} icon={faLinkedin} />
+  );
+  const ICON_MEDIUM = (
+    <FontAwesomeIcon className={styles.icon} icon={faMedium} />
+  );
+  const ICON_FORUM = (
+    <FontAwesomeIcon className={styles.icon} icon={faComments} />
+  );
+  const cards = [
+    {
+      icon: ICON_FORUM,
+      text: "Forum",
+      url: FORUM,
+    },
+    {
+      icon: ICON_TWITTER,
+      text: "Twitter",
+      url: TWITTER,
+    },
+    {
+      icon: ICON_TELEGRAM,
+      text: "Telegram",
+      url: TELEGRAM,
+    },
+    {
+      icon: ICON_MEDIUM,
+      text: "Medium",
+      url: MEDIUM,
+    },
+    {
+      icon: ICON_YOUTUBE,
+      text: "YouTube",
+      url: YOUTUBE,
+    },
+    {
+      icon: ICON_LINKEDIN,
+      text: "LinkedIn",
+      url: LINKEDIN,
+    },
+  ];
   return (
     <div className={styles.container}>
       <h2 className={styles.title}>Join the conversation</h2>
-      <div className={styles.cardsContainerJoinTheConv}>
-        <div className={styles.card}>
-          <div className={styles.cardIcon}>{comments}</div>
-          <div className={styles.cardTitle}>Forum</div>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://forum.totalcross.com/"
-          >
-            <div className={styles.cardArrow}>{arrow}</div>
-          </a>
-        </div>
-
-        <div className={styles.card}>
-          <div className={styles.cardIcon}>{snTwt}</div>
-          <div className={styles.cardTitle}>Twitter</div>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/TotalCross/totalcross"
-          >
-            <div className={styles.cardArrow}>{arrow}</div>
-          </a>
-        </div>
-
-        <div className={styles.card}>
-          <div className={styles.cardIcon}>{snTel}</div>
-          <div className={styles.cardTitle}>Telegram</div>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/TotalCross/totalcross"
-          >
-            <div className={styles.cardArrow}>{arrow}</div>
-          </a>
-        </div>
-
-        <div className={styles.card}>
-          <div className={styles.cardIcon}>{snMed}</div>
-          <div className={styles.cardTitle}>Medium</div>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/TotalCross/totalcross"
-          >
-            <div className={styles.cardArrow}>{arrow}</div>
-          </a>
-        </div>
-
-        <div className={styles.card}>
-          <div className={styles.cardIcon}>{snYou}</div>
-          <div className={styles.cardTitle}>Youtube</div>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/TotalCross/totalcross"
-          >
-            <div className={styles.cardArrow}>{arrow}</div>
-          </a>
-        </div>
-
-        <div className={styles.card}>
-          <div className={styles.cardIcon}>{snLin}</div>
-          <div className={styles.cardTitle}>LinkedIn</div>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/TotalCross/totalcross"
-          >
-            <div className={styles.cardArrow}>{arrow}</div>
-          </a>
-        </div>
+      <div className={styles.cardsContainer}>
+        {cards.map((card) => (
+          <Card icon={card.icon} text={card.text} url={card.url} />
+        ))}
       </div>
     </div>
   );
