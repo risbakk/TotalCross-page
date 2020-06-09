@@ -3,11 +3,13 @@
 .container-icons {
   font-family: $font-family-main;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   text-align: center;
   background-color: $bcg-sec;
   padding: 100px 0 50px;
+}
+.container-icon {
+  padding: 10px;
 }
 
 .icon-title {
@@ -47,18 +49,44 @@
 }
 
 .button {
-  font: $font-h3;
-  border-radius: 20px;
-  padding: 8px 30px;
-  margin-top: 40px;
+  font: $font-h4;
+  margin-top: 20px;
+  border-radius: 40px;
+  padding: 12px 36px;
   background-color: $bcg-main;
   border: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 @media only screen and (max-width: 600px) {
+  .container-icons {
+    flex-wrap: wrap;
+  }
+  .container-icon {
+    display: flex;
+  }
+  .icon {
+    width: 30%;
+  }
+  .icon-text-area {
+    width: 70%;
+  }
+  .icon-title {
+    font: $font-h2-mobile;
+  }
+  .icon-text {
+    font: $font-h3-mobile;
+    width: 100%;
+  }
   .image {
     width: 90%;
     height: auto;
+  }
+  .code-text {
+    font: $font-h3-mobile;
+    text-align: center;
+  }
+  .container-code-image {
+    padding-bottom: 10px;
   }
 }

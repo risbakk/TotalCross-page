@@ -75,34 +75,43 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  padding: 0;
   padding-bottom: 50px;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .button-area-text {
   font: $font-h2;
   padding: auto;
-  text-align: center;
-  width: 98%;
+  margin-left: 0;
+  text-align: left;
+  padding-left: 40px;
+  width: 557px;
 }
 
 .button {
-  font: $font-h3;
+  font: $font-h4;
+  margin-top: 20px;
+  border-radius: 40px;
+  padding: 12px 36px;
   color: $text;
   background-color: $bcg-main;
   border-radius: 20px;
+  border: none;
   width: 200px;
   margin: 10px auto;
+  box-shadow: 0px 3px 6px #21212180;
 }
 .button-area-button {
-  width: 100%;
-  padding-top: 40px;
+  align-items: center;
+  padding-right: 40px;
 }
 
 .cases-icon {
   padding-top: 40px;
-  text-align: center;
+  padding-left: 40px;
+  text-align: left;
   color: $bcg-main;
   font-size: 30px;
 }
@@ -117,6 +126,24 @@
   .button {
     font: $font-h3;
     margin: 0;
+  }
+  .button-area {
+    justify-content: center;
+    align-items: center;
+  }
+  .button-area-text {
+    font: $font-h2-mobile;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+  }
+  .button-area-button {
+    padding-right: 0;
+    padding-top: 20px;
+  }
+  .cases-icon {
+    text-align: center;
+    padding-left: 0;
   }
   .cases-title {
     font: $font-h2-mobile;

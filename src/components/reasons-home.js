@@ -9,23 +9,23 @@ import HelloWorldGIF from "../imgs/TotalCrossHelloWorld.gif";
 function Reasons() {
   const data = useStaticQuery(graphql`
     query {
-      low: file(relativePath: { eq: "src/imgs/lowfootprint.png" }) {
+      low: file(relativePath: { eq: "src/imgs/low-footprint.png" }) {
         childImageSharp {
-          fixed(width: 100, height: 85) {
+          fixed(width: 80, height: 80) {
             ...GatsbyImageSharpFixed
           }
         }
       }
-      test: file(relativePath: { eq: "src/imgs/test.png" }) {
+      test: file(relativePath: { eq: "src/imgs/gui.png" }) {
         childImageSharp {
-          fixed(width: 100, height: 100) {
+          fixed(width: 80, height: 80) {
             ...GatsbyImageSharpFixed
           }
         }
       }
-      devices: file(relativePath: { eq: "src/imgs/devices.png" }) {
+      devices: file(relativePath: { eq: "src/imgs/cross.png" }) {
         childImageSharp {
-          fixed(width: 110, height: 100) {
+          fixed(width: 80, height: 80) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -42,61 +42,55 @@ function Reasons() {
   return (
     <div>
       <div className={styles.containerIcons}>
-        <div
-          style={{
-            padding: "10px",
-            flex: "1 1",
-          }}
-        >
-          <Img
-            fixed={data.low.childImageSharp.fixed}
-            alt="low footprint icon"
-          />
-          <h6 className={styles.iconTitle}>Low Footprint</h6>
-          <p className={styles.iconText}>
-            Less than 10MB of footprint, ensuring high performance even when
-            running in low-end devices
-          </p>
+        <div className={styles.containerIcon}>
+          <div className={styles.icon}>
+            <Img
+              fixed={data.low.childImageSharp.fixed}
+              alt="low footprint icon"
+            />
+          </div>
+          <div className={styles.iconTextArea}>
+            <div className={styles.iconTitle}>Low Footprint</div>
+            <div className={styles.iconText}>
+              Less than 10MB of footprint, ensuring high performance even when
+              running in low-end devices
+            </div>
+          </div>
         </div>
-        <div
-          style={{
-            padding: "10px",
-            flex: "1 1",
-          }}
-        >
-          <Img
-            fixed={data.devices.childImageSharp.fixed}
-            alt="desktop tablet and mobile icon"
-          />
-          <h6 className={styles.iconTitle}>Cross-Platform</h6>
-          <p className={styles.iconText}>
-            Code once and run on every platform. Responsive User Interfaces
-            providing same behaviour and usability.
-          </p>
+
+        <div className={styles.containerIcon}>
+          <div className={styles.icon}>
+            <Img
+              fixed={data.test.childImageSharp.fixed}
+              alt="test footprint icon"
+            />
+          </div>
+          <div className={styles.iconTextArea}>
+            <div className={styles.iconTitle}>Easy to use GUI Creator</div>
+            <div className={styles.iconText}>
+              Basic knowledge of Java or Kotlin lets you build performing Apps
+              for Android, Linux Arm, Windows and iOS.
+            </div>
+          </div>
         </div>
-        <div
-          style={{
-            padding: "10px",
-            flex: "1 1",
-          }}
-        >
-          <Img
-            fixed={data.test.childImageSharp.fixed}
-            alt="test footprint icon"
-          />
-          <h6 className={styles.iconTitle}>Easy to use GUI Creator</h6>
-          <p className={styles.iconText}>
-            Basic knowledge of Java or Kotlin lets you build performing Apps for
-            Android, Linux Arm, Windows and iOS.
-          </p>
+
+        <div className={styles.containerIcon}>
+          <div className={styles.icon}>
+            <Img
+              fixed={data.devices.childImageSharp.fixed}
+              alt="desktop tablet and mobile icon"
+            />
+          </div>
+          <div className={styles.iconTextArea}>
+            <div className={styles.iconTitle}>Cross-Platform</div>
+            <div className={styles.iconText}>
+              Code once and run on every platform. Responsive User Interfaces
+              providing same behaviour and usability.
+            </div>
+          </div>
         </div>
       </div>
       <div className={styles.containerCodeImage}>
-        {/* <Img
-          className={styles.image}
-          fixed={data.code.childImageSharp.fixed}
-          alt="TotalCross code sample"
-        /> */}
         <img
           className={styles.image}
           src={HelloWorldGIF}
