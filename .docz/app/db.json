@@ -641,17 +641,6 @@
           "actualName": "Logo"
         }
       ]
-    },
-    {
-      "key": "src/components/cases.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Cases",
-          "methods": [],
-          "actualName": "Cases"
-        }
-      ]
     }
   ]
 }
