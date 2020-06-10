@@ -641,17 +641,6 @@
           "actualName": "Logo"
         }
       ]
-    },
-    {
-      "key": "src/components/reasons-home.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Reasons",
-          "methods": [],
-          "actualName": "Reasons"
-        }
-      ]
     }
   ]
 }

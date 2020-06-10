@@ -73,10 +73,14 @@
   }
   .icon-title {
     font: $font-h2-mobile;
+    text-align: left;
+    padding-left: 10px;
   }
   .icon-text {
     font: $font-h3-mobile;
+    text-align: left;
     width: 100%;
+    padding-left: 10px;
   }
   .image {
     width: 90%;

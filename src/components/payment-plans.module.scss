@@ -8,6 +8,7 @@
   color: $red;
   font: $font-h1;
   padding-top: $main-pt-desktop;
+  padding-bottom: 50px;
 }
 .cards-container {
   display: flex;
@@ -25,8 +26,8 @@
   box-shadow: 0px 3px 6px #16161691;
 }
 .card-title {
-  padding-top: 53px;
-  font: $font-h3;
+  padding-top: 33px;
+  font: $font-h2;
   text-transform: uppercase;
 }
 .card-subtitle {
@@ -47,7 +48,6 @@
   padding-left: 10%;
   padding-bottom: 50px;
   list-style: none;
-  // border: solid blue;
   //   ;list-style-image: url('')
 }
 .card-list-item {
@@ -55,6 +55,7 @@
   // border: solid blue;
 }
 .bullet-point {
+  // border: solid blue;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,6 +64,7 @@
   width: 30px;
   min-width: 30px;
   height: 26px;
+  margin-right: 10px;
 }
 .bullet-point-background {
   background-color: $white-mobile;
@@ -105,14 +107,13 @@
 
 @media only screen and (max-width: 600px) {
   .container {
-    background-color: $grey-mobile;
+    background-color: $bcg-sec;
   }
   .page-title {
     padding-top: $main-pt-mobile;
     padding-bottom: $main-pb-mobile;
-    color: $white-mobile;
-    font-family: "Noto Sans JP";
-    font-weight: 400;
+    color: $red;
+    font: $font-h1-mobile2;
   }
   .card {
     background-color: $bcg-main;
@@ -140,7 +141,7 @@
     color: $green-mobile;
   }
   .card-list {
-    font-family: "Noto Sans Jp";
+    font-family: "Roboto";
     font-weight: 100;
     // border: solid white;
     text-align: left;

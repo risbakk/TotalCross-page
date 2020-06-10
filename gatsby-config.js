@@ -31,7 +31,7 @@ module.exports = {
           families: [
             "Pacifico",
             "Poppins:300,500,700,800",
-            "Noto Sans JP:100,200,300,400,500",
+            "Roboto:100,200,300,400,500",
           ],
         },
       },
