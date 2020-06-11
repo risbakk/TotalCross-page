@@ -19,7 +19,7 @@ jobs:
         name: 'Nathalie'
         email: 'nathaliemarquesin@gmail.com'
         actor: 'risbakk'
-        token: '${{ secrets.ACCESS_TOKEN }}'
+        token: '${{ secrets.RISS_PASSWORD }}'
       
     - name: Set Node.js
       uses: actions/setup-node@master
