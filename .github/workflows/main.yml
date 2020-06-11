@@ -18,7 +18,7 @@ jobs:
       with:
         name: 'Nathalie'
         email: 'nathaliemarquesin@gmail.com'
-        actor: 'Nathalie'
+        actor: 'risbakk'
         token: '${{ secrets.ACCESS_TOKEN }}'
       
     - name: Set Node.js
