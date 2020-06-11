@@ -12,7 +12,7 @@ jobs:
     - uses: actions/checkout@v2
       
     - name: Gatsby Publish
-      uses: enriikke/gatsby-gh-pages-action@v2.1.1
+      uses: risbakk/gatsby-gh-pages-action
       with:
         access-token: ${{ secrets.ACCESS_TOKEN }}
         deploy-repo: "https://github.com/risbakk/risbakk.github.io"
