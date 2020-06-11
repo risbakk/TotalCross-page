@@ -15,3 +15,4 @@ jobs:
       uses: enriikke/gatsby-gh-pages-action@v2.1.1
       with:
         access-token: ${{ secrets.ACCESS_TOKEN }}
+        deploy-repo: "https://github.com/risbakk/risbakk.github.io
