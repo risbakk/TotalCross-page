@@ -13,7 +13,7 @@ function NavBar() {
     query {
       logo: file(relativePath: { eq: "src/imgs/logo-totalcross.png" }) {
         childImageSharp {
-          fixed(width: 180, height: 30) {
+          fixed(width: 135, height: 30) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -27,9 +27,16 @@ function NavBar() {
       fixed="top"
       className={styles.navbarContainer}
     >
+      {/* <div className={styles.logo}> */}
       <Navbar.Brand href="/">
-        <Img fixed={data.logo.childImageSharp.fixed} alt="TotalCross logo" />
+        <Img
+          className={styles.logo}
+          fixed={data.logo.childImageSharp.fixed}
+          alt="TotalCross logo"
+        />
       </Navbar.Brand>
+      {/* </div> */}
+      {/* <div className={styles.mainMenu}> */}
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className={styles.navContainer}>
@@ -56,8 +63,11 @@ function NavBar() {
             ENTERPRISE
           </a>
         </Nav>
-        <SocialNetworks />
       </Navbar.Collapse>
+      {/* </div> */}
+      <div className={styles.socialNetworks}>
+        <SocialNetworks />
+      </div>
     </Navbar>
   );
 }
