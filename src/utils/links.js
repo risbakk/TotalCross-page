@@ -1,6 +1,10 @@
 export const GET_STARTED =
   "https://learn.totalcross.com/documentation/get-started";
 export const CONTACT = "/contact";
+export const COMUNITY = "/community";
+export const PRICING = "/pricing";
+export const ENTERPRISE = "http://www.superwaba.net/SDKRegistrationService/";
+export const DOCS = "https://learn.totalcross.com/";
 export const FORUM = "https://forum.totalcross.com/";
 export const TWITTER = "https://twitter.com/TotalCross";
 export const TELEGRAM = "https://t.me/totalcrosscommunity";

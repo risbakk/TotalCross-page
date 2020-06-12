@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
+import { GET_STARTED, DOCS, CONTACT, MEDIUM, GITHUB } from "../utils/links";
 
 import SocialNetworks from "../utils/social-networks";
 
@@ -26,19 +27,19 @@ const Footer = () => {
             <h5 className={styles.footerNavSubtitle}>Resources</h5>
             <ul className={styles.footerNavItems}>
               <li>
-                <Link className={styles.footerNavItem} to="/docs">
+                <Link className={styles.footerNavItem} to={GET_STARTED}>
                   Get Started
                 </Link>
               </li>
               <li>
-                <Link className={styles.footerNavItem} to="/docs">
+                <Link className={styles.footerNavItem} to={DOCS}>
                   Docs
                 </Link>
               </li>
               <li>
                 <a
                   className={styles.footerNavItem}
-                  href="https://github.com/TotalCross/totalcross"
+                  href={GITHUB}
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -53,7 +54,7 @@ const Footer = () => {
               <li>
                 <a
                   className={styles.footerNavItem}
-                  href="https://github.com/TotalCross/totalcross"
+                  href={GITHUB}
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -63,7 +64,7 @@ const Footer = () => {
               <li>
                 <a
                   className={styles.footerNavItem}
-                  href="https://medium.com/totalcross-community"
+                  href={MEDIUM}
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -76,7 +77,7 @@ const Footer = () => {
             <h5 className={styles.footerNavSubtitle}>About Us</h5>
             <ul className={styles.footerNavItems}>
               <li>
-                <Link className={styles.footerNavItem} to="/contact">
+                <Link className={styles.footerNavItem} to={CONTACT}>
                   Contact Us
                 </Link>
               </li>

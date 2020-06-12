@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 import { Navbar, Nav } from "react-bootstrap";
 import Img from "gatsby-image";
 import { useStaticQuery, graphql } from "gatsby";
+import { COMMUNITY, DOCS, PRICING, ENTERPRISE } from "../utils/links";
 
 import SocialNetworks from "../utils/social-networks";
 import styles from "./navbar.module.scss";
@@ -32,20 +33,20 @@ function NavBar() {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className={styles.navContainer}>
-          <Link className={styles.navItem} to="/pricing">
+          <Link className={styles.navItem} to={PRICING}>
             pricing
           </Link>
-          <Link className={styles.navItem} to="/docs">
+          <Link className={styles.navItem} to={DOCS}>
             docs
           </Link>
-          <Link className={styles.navItem} to="/community">
+          <Link className={styles.navItem} to={COMMUNITY}>
             community
           </Link>
           <a
             className={styles.navItem}
             target="_blank"
             rel="noopener noreferrer"
-            href="http://www.superwaba.net/SDKRegistrationService/"
+            href={ENTERPRISE}
           >
             ENTERPRISE
           </a>
