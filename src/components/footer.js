@@ -27,14 +27,24 @@ const Footer = () => {
             <h5 className={styles.footerNavSubtitle}>Resources</h5>
             <ul className={styles.footerNavItems}>
               <li>
-                <Link className={styles.footerNavItem} to={GET_STARTED}>
+                <a
+                  className={styles.footerNavItem}
+                  href={GET_STARTED}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Get Started
-                </Link>
+                </a>
               </li>
               <li>
-                <Link className={styles.footerNavItem} to={DOCS}>
+                <a
+                  className={styles.footerNavItem}
+                  href={DOCS}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Docs
-                </Link>
+                </a>
               </li>
               <li>
                 <a

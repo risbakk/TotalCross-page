@@ -1,7 +1,7 @@
 export const GET_STARTED =
   "https://learn.totalcross.com/documentation/get-started";
 export const CONTACT = "/contact";
-export const COMUNITY = "/community";
+export const COMMUNITY = "/community";
 export const PRICING = "/pricing";
 export const ENTERPRISE = "http://www.superwaba.net/SDKRegistrationService/";
 export const DOCS = "https://learn.totalcross.com/";

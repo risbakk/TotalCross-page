@@ -641,6 +641,28 @@
           "actualName": "Logo"
         }
       ]
+    },
+    {
+      "key": "src/components/navbar.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "NavBar",
+          "methods": [],
+          "actualName": "NavBar"
+        }
+      ]
+    },
+    {
+      "key": "src/components/footer.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Footer",
+          "methods": [],
+          "actualName": "Footer"
+        }
+      ]
     }
   ]
 }

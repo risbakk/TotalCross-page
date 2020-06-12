@@ -36,9 +36,14 @@ function NavBar() {
           <Link className={styles.navItem} to={PRICING}>
             pricing
           </Link>
-          <Link className={styles.navItem} to={DOCS}>
+          <a
+            className={styles.navItem}
+            target="_blank"
+            rel="noopener noreferrer"
+            href={DOCS}
+          >
             docs
-          </Link>
+          </a>
           <Link className={styles.navItem} to={COMMUNITY}>
             community
           </Link>
