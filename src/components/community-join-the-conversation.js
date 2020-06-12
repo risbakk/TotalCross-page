@@ -39,7 +39,7 @@ const JoinTheConversation = () => {
   const ICON_FORUM = (
     <FontAwesomeIcon className={styles.icon} icon={faComments} />
   );
-  const cards = [
+  const cards1 = [
     {
       icon: ICON_FORUM,
       text: "Forum",
@@ -55,6 +55,8 @@ const JoinTheConversation = () => {
       text: "Telegram",
       url: TELEGRAM,
     },
+  ];
+  const cards2 = [
     {
       icon: ICON_MEDIUM,
       text: "Medium",
@@ -74,8 +76,13 @@ const JoinTheConversation = () => {
   return (
     <div className={styles.container}>
       <h2 className={styles.title}>Join the conversation</h2>
-      <div className={styles.cardsContainer}>
-        {cards.map((card) => (
+      <div className={styles.cardsContainerJoinTheConv}>
+        {cards1.map((card) => (
+          <Card icon={card.icon} text={card.text} url={card.url} />
+        ))}
+      </div>
+      <div className={styles.cardsContainerJoinTheConv}>
+        {cards2.map((card) => (
           <Card icon={card.icon} text={card.text} url={card.url} />
         ))}
       </div>

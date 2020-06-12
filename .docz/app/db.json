@@ -643,24 +643,13 @@
       ]
     },
     {
-      "key": "src/components/navbar.js",
+      "key": "src/components/community-join-the-conversation.js",
       "value": [
         {
           "description": "",
-          "displayName": "NavBar",
+          "displayName": "JoinTheConversation",
           "methods": [],
-          "actualName": "NavBar"
-        }
-      ]
-    },
-    {
-      "key": "src/components/footer.js",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Footer",
-          "methods": [],
-          "actualName": "Footer"
+          "actualName": "JoinTheConversation"
         }
       ]
     }
