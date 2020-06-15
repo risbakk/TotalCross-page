@@ -37,7 +37,7 @@ function HeroHome() {
           className={styles.button}
           variant="success"
         >
-          Get started
+          Try in 8 minutes
         </Button>
       </div>
     </BackgroundImage>
